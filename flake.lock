@@ -31,10 +31,44 @@
         "type": "github"
       }
     },
+    "plugins-hlargs": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1746790317,
+        "narHash": "sha256-aj3ownRZSXuuMM9AWU3pEewY4SY7IOYtAnFWXPUwfk0=",
+        "owner": "m-demare",
+        "repo": "hlargs.nvim",
+        "rev": "752927d9ebf753802bd4788e53c67a21b8e255cc",
+        "type": "github"
+      },
+      "original": {
+        "owner": "m-demare",
+        "repo": "hlargs.nvim",
+        "type": "github"
+      }
+    },
+    "plugins-neopywal-nvim": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1744501005,
+        "narHash": "sha256-RLwxyGRmU1B8r6xO1YObF8qlNEj7qitNUArUlw092V8=",
+        "owner": "RedsXDD",
+        "repo": "neopywal.nvim",
+        "rev": "09188d79b45694141ec779d05cbcc75f994639d1",
+        "type": "github"
+      },
+      "original": {
+        "owner": "RedsXDD",
+        "repo": "neopywal.nvim",
+        "type": "github"
+      }
+    },
     "root": {
       "inputs": {
         "nixCats": "nixCats",
-        "nixpkgs": "nixpkgs"
+        "nixpkgs": "nixpkgs",
+        "plugins-hlargs": "plugins-hlargs",
+        "plugins-neopywal-nvim": "plugins-neopywal-nvim"
       }
     }
   },

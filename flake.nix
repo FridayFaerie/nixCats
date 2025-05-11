@@ -21,6 +21,7 @@
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
     nixCats.url = "github:BirdeeHub/nixCats-nvim";
 
+
     # see :help nixCats.flake.inputs
     # If you want your plugin to be loaded by the standard overlay,
     # i.e. if it wasnt on nixpkgs, but doesnt have an extra build step.
@@ -35,10 +36,15 @@
     # How to import it into your config is shown farther down in the startupPlugins set.
     # You put it here like this, and then below you would use it with `pkgs.neovimPlugins.hlargs`
 
-    # "plugins-hlargs" = {
-    #   url = "github:m-demare/hlargs.nvim";
-    #   flake = false;
-    # };
+    "plugins-hlargs" = {
+      url = "github:m-demare/hlargs.nvim";
+      flake = false;
+    };
+
+    "plugins-neopywal-nvim" = {
+      url = "github:RedsXDD/neopywal.nvim";
+      flake = false;
+    };
 
     # neovim-nightly-overlay = {
     #   url = "github:nix-community/neovim-nightly-overlay";
@@ -161,6 +167,7 @@
             nvim-notify
             todo-comments-nvim
             dashboard-nvim
+            pkgs.neovimPlugins.neopywal-nvim
           ];
           extra = [
             oil-nvim
@@ -263,7 +270,7 @@
             vim-startuptime
             # If it was included in your flake inputs as plugins-hlargs,
             # this would be how to add that plugin in your config.
-            # pkgs.neovimPlugins.hlargs
+            pkgs.neovimPlugins.hlargs
           ];
         };
       };
