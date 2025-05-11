@@ -126,6 +126,7 @@
           universal-ctags
           ripgrep
           fd
+          pyright
         ];
         # these names are arbitrary.
         lint = with pkgs; [
