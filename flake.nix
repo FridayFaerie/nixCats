@@ -167,7 +167,6 @@
             plenary-nvim
             nvim-notify
             todo-comments-nvim
-            dashboard-nvim
             pkgs.neovimPlugins.neopywal-nvim
           ];
           extra = [
