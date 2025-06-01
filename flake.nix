@@ -244,6 +244,8 @@
                   nix
                   lua
                   typst
+                  qmljs
+                  qmldir
                 ]
             ))
           ];
